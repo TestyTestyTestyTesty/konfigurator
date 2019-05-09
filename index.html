@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<style>
+
+</style>
+
+<body>
+    <div class="form">
+        <div class="form-top">
+            <h1>Kreator</h1>
+            <div>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+            <a class="siatka" href="#">siatka zadruku</a>
+        </div>
+        <form id="regForm" action="/action_page.php">
+            <div class="tab">
+                <div class="column column-1">
+                    <img src="assets/tuba.png">
+                </div>
+                <div class="column column-2">
+                    <div class="radio-input">
+                        <h2 class="column-title">Średnica:</h2>
+                        <label><input type="radio" name="srednica" value="19 mm" checked> 19 mm</label>
+                        <label><input type="radio" name="srednica" value="25 mm"> 25 mm</label>
+                        <label><input type="radio" name="srednica" value="30 mm"> 30 mm</label>
+                        <label><input type="radio" name="srednica" value="35 mm"> 35 mm</label>
+                        <label><input type="radio" name="srednica" value="40 mm"> 40 mm</label>
+                        <label><input type="radio" name="srednica" value="50 mm"> 50 mm</label>
+                    </div>
+                </div>
+                <div class="column column-3">
+                    <div class="number-input">
+                        <h2 class="column-title">Długość:</h2>
+                        <label><input type="number" name="dlugosc" min="80" max="120" value="80"> mm</label>
+                        <small>(od x do y mm)</small>
+                    </div>
+                </div>
+                <div class="column column-4">
+                    <div class="sugested-output">
+                        <h2 class="column-title">Szacunkowa pojemność:</h2>
+                        <h3>20 - 25 ml</h3>
+                        <div class="sugested-output-details">
+                            <p>Rekomendujemy wykonanie testów pojemności.</p>
+                            <p>Dział handlowy:</p>
+                            <a class="email" href="mailto: sales@mpack.com.pl">sales@mpack.com.pl</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <div class="column column-1">
+                    <img src="assets/tuba.png">
+                </div>
+                <div class="column column-2">
+                    <div class="radio-input">
+                        <h2 class="column-title">ilość wartsw:</h2>
+                        <label><input type="radio" name="ilosc-warstw" value="19 mm" checked> 19 mm</label>
+                        <label><input type="radio" name="ilosc-warstw" value="25 mm"> 25 mm</label>
+                        <label><input type="radio" name="ilosc-warstw" value="30 mm"> 30 mm</label>
+                        <label><input type="radio" name="ilosc-warstw" value="35 mm"> 35 mm</label>
+                        <label><input type="radio" name="ilosc-warstw" value="40 mm"> 40 mm</label>
+                        <label><input type="radio" name="ilosc-warstw" value="50 mm"> 50 mm</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab">
+                <div class="column column-1">
+                    <img src="assets/tuba.png">
+                </div>
+                <div class="column column-2">
+                    <div class="image-list-input">
+                        <h2 class="column-title">Główka tubki</h2>
+                        <div class="cc-selector">
+                            <input checked="checked" id="standard" type="radio" name="typ-glowki" value="standard" />
+                            <label class="drinkcard-cc glowka-standard" for="standard"></label>
+                            <label class="additional-text" for="standard">Standard</label>
+                            <input id="kaniula" type="radio" name="typ-glowki" value="kaniula" />
+                            <label class="drinkcard-cc glowka-kaniula" for="kaniula"></label>
+                            <label class="additional-text" for="standard">Kaniula</label>
+                            <input id="push-on" type="radio" name="typ-glowki" value="push-on" />
+                            <label class="drinkcard-cc glowka-push-on" for="push-on"></label>
+                            <label class="additional-text" for="standard">Push-on</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-3">
+                    <div class="radio-input">
+                        <h2 class="column-title">Średnica otworu:</h2>
+                        <label><input type="radio" name="srednica-otworu" value="1,5 mm" checked> 1,5 mm</label>
+                        <label><input type="radio" name="srednica-otworu" value="2,0 mm"> 2,0 mm</label>
+                    </div>
+                </div>
+                <div class="column column-4">
+                    <div class="radio-input">
+                        <h2 class="column-title">Membrana:</h2>
+                        <label><input type="radio" name="membrana" value="bez-membrany" checked> bez membrany</label>
+                        <label><input type="radio" name="membrana" value="membrana"> z membraną</label>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <div class="column column-1">
+                    <img src="assets/tuba.png">
+                </div>
+                <div class="column column-2">
+                    <div class="image-list-input">
+                        <h2 class="column-title">Nakrętka</h2>
+                        <div class="cc-selector">
+                            <input checked="checked" id="flip-top" type="radio" name="nakretka" value="flip-top" />
+                            <label class="drinkcard-cc nakretka-flip-top" for="flip-top"></label>
+                            <label class="additional-text" for="flip-top">flip-top</label>
+                            <input id="softline" type="radio" name="nakretka" value="softline" />
+                            <label class="drinkcard-cc nakretka-softline" for="softline"></label>
+                            <label class="additional-text" for="standard">softline</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-3">
+                    <div class="image-list-input">
+                        <h2 class="column-title">Zdobienie nakrętki</h2>
+                        <div class="cc-selector">
+
+                            <input checked="checked" id="brak" type="radio" name="zdobienie-nakretki" value="brak" />
+                            <label class="drinkcard-cc zdobienie-brak" for="brak"></label>
+                            <label class="additional-text" for="brak">brak</label>
+
+                            <input checked="checked" id="metalizacja" type="radio" name="zdobienie-nakretki"
+                                value="metalizacja" />
+                            <label class="drinkcard-cc zdobienie-metalizacja" for="metalizacja"></label>
+                            <label class="additional-text" for="metalizacja">metalizacja</label>
+
+                            <input checked="checked" id="napis" type="radio" name="zdobienie-nakretki" value="napis" />
+                            <label class="drinkcard-cc zdobienie-napis" for="napis"></label>
+                            <label class="additional-text" for="napis">napis</label>
+
+                            <input checked="checked" id="2-kolory" type="radio" name="zdobienie-nakretki"
+                                value="2-kolory" />
+                            <label class="drinkcard-cc zdobienie-2-kolory" for="2-kolory"></label>
+                            <label class="additional-text" for="2-kolory">2-kolory</label>
+
+                            <input checked="checked" id="hot-stamping" type="radio" name="zdobienie-nakretki"
+                                value="hot-stamping" />
+                            <label class="drinkcard-cc zdobienie-hot-stamping" for="hot-stamping"></label>
+                            <label class="additional-text" for="hot-stamping">hot-stamping</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-4">
+                    <div class="radio-input">
+                        <h2 class="column-title">Membrana:</h2>
+                        <label><input type="radio" name="membrana" value="bez-membrany" checked> bez membrany</label>
+                        <label><input type="radio" name="membrana" value="membrana"> z membraną</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="navigation">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">cofnij</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">dalej</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
