@@ -1,0 +1,9 @@
+{
+    "długosc":{
+      "min":"80",
+      "max":"120"
+    },
+    "warstwy":["1"],
+    "glowka":["standard","kaniula"],
+    
+  }
